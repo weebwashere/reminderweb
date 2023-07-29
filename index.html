@@ -6,32 +6,32 @@
     <style>
       /* Add some styles to the navigation bar */
       nav {
-        background-color: #333;
+        background-color: transparent;
         overflow: hidden;
+        display: flex; /* add display property to flex */
+        justify-content: center; /* align items to center */
       }
       
       /* Style the links inside the navigation bar */
       nav a {
-        float: right; /* change the float property to right */
         color: white;
         text-align: center;
         padding: 16px 16px;
         text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.25s ease-in-out;
       }
-
-      /* Add a style to the Logo text */
-      .logo {
-        color: white;
-        float: left; /* add float property to the left */
-        padding: 16px;
-        font-size: 20px;
-        font-weight: bold;
-      }
+      
       
       /* Change the color of links on hover */
       nav a:hover {
-        background-color: #ddd;
-        color: black;
+        background-color: transparent;
+        color: white;
+        border-bottom: 2px solid white;
+      }
+      
+      nav a:not(:last-child) {
+        margin-right: 20px; /* add margin to space out the links */
       }
       
       .container {
@@ -53,10 +53,9 @@
   </head>
   <body>
     <nav>
-      <div class="logo">Logo</div> <!-- add a div for logo text -->
-      <a href="#">Contact</a>
+      <a href="#">Home</a>
       <a href="#">About</a>
-      <a href="#">Home</a> <!-- change the order of the links -->
+      <a href="#">Contact</a>
     </nav>
     <div class="container">
       <img src="https://img.guildedcdn.com/ContentMediaGenericFiles/6720bc8f5b90f6ee258dbc4f28598429-Full.webp?w=756&h=756" alt="Placeholder Image" width="350" height="350">
