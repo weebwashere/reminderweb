@@ -12,11 +12,20 @@
       
       /* Style the links inside the navigation bar */
       nav a {
-        float: left;
+        float: right; /* change the float property to right */
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 16px 16px;
         text-decoration: none;
+      }
+
+      /* Add a style to the Logo text */
+      .logo {
+        color: white;
+        float: left; /* add float property to the left */
+        padding: 16px;
+        font-size: 20px;
+        font-weight: bold;
       }
       
       /* Change the color of links on hover */
@@ -44,9 +53,10 @@
   </head>
   <body>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <div class="logo">Logo</div> <!-- add a div for logo text -->
       <a href="#">Contact</a>
+      <a href="#">About</a>
+      <a href="#">Home</a> <!-- change the order of the links -->
     </nav>
     <div class="container">
       <img src="https://img.guildedcdn.com/ContentMediaGenericFiles/6720bc8f5b90f6ee258dbc4f28598429-Full.webp?w=756&h=756" alt="Placeholder Image" width="350" height="350">
