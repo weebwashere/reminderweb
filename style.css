@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 body {
-  background-color: #1e2124;
+  background-color: #252525;
   font-family: 'Poppins', sans-serif;
   color: white;
   margin: 0px;
@@ -10,11 +10,11 @@ body {
 .container { padding-inline: 15px; }
 
 h1 {
-  font-size: 36px;
+  font-size: 26px;
 }
 
 p {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 button {

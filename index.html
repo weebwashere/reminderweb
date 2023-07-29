@@ -37,23 +37,59 @@
       .container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 1000px; /* set the width to include the image and text */
+        justify-content: center;
+        flex-direction: column;
         margin-top: 130px; /* add margin to the top to move the container down */
       }
       .text {
         text-align: center;
-        width: 50%; /* set the width of the text to 50% */
-        margin-right: 90px; /* add a margin-right to create space between the text and image */
-      }
-      img {
-        margin-left: 0px; /* add a margin-left to create space between the image and text */
+        max-width: 500px; /* set the max-width of the text to 500px */
+        margin-top: 15px; /* add margin to the top to space out the text from the navigation bar */
       }
       h1 {
         text-align: center;
         color: white;
         font-size: 36px;
-        margin-top: 50px;
+        margin-top: 0px;
+      }
+      .highlight {
+        color: #F5C400; /* set the color to yellow */
+      }
+      
+      /* Add styles for the button */
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* add some space between the text and the button */
+      }
+      
+      .my-button {
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: 3px;
+        padding: 0 24px; /* increase the padding to make the button bigger */
+        border-radius: 4px;
+        color: #fff;
+        background: #F5C400; /* change the background color to #F5C400 */
+        line-height: 1.15;
+        font-size: 16px; /* increase the font size to match the button size */
+        height: 48px; /* increase the height to match the button size */
+        word-spacing: 0px;
+        letter-spacing: .0892857143em;
+        text-decoration: none;
+        text-transform: uppercase;
+        min-width: 120px; /* increase the min-width to match the button size */
+        border: none;
+        text-align: center;
+        box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+        transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .my-button:hover {
+        background: #FFD600; /* add a hover color */
+        box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
       }
     </style>
   </head>
@@ -64,9 +100,12 @@
       <a href="#">Server</a>
     </nav>
     <div class="container">
-      <img src="https://img.guildedcdn.com/ContentMediaGenericFiles/6720bc8f5b90f6ee258dbc4f28598429-Full.webp?w=756&h=756" alt="Placeholder Image" width="350" height="350">
       <div class="text">
-        <p>meet Reminder, a bot that can create, and control your reminders at ease.</p>
+        <h1>Meet <span class="highlight">Reminder</span></h1>
+        <p>A bot that can create and manage your reminders with ease.</p>
+      </div>
+      <div class="button-container">
+        <button class="my-button">invite</button>
       </div>
     </div>
   </body>
