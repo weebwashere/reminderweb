@@ -1,118 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>weebwashere</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-    
-    <style>
-      /* Add some styles to the navigation bar */
-      nav {
-        background-color: transparent;
-        overflow: hidden;
-        display: flex; /* add display property to flex */
-        justify-content: center; /* align items to center */
-      }
-      
-      /* Style the links inside the navigation bar */
-      nav a {
-        color: white;
-        text-align: center;
-        padding: 16px 16px;
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.25s ease-in-out;
-      }
-      
-      
-      /* Change the color of links on hover */
-      nav a:hover {
-        background-color: transparent;
-        color: white;
-        border-bottom: 2px solid white;
-      }
-      
-      nav a:not(:last-child) {
-        margin-right: 20px; /* add margin to space out the links */
-      }
-      
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 130px; /* add margin to the top to move the container down */
-      }
-      .text {
-        text-align: center;
-        max-width: 600px; /* set the max-width of the text to 500px */
-        margin-top: 15px; /* add margin to the top to space out the text from the navigation bar */
-      }
-      h1 {
-        text-align: center;
-        color: white;
-        font-size: 36px;
-        margin-top: 0px;
-      }
-      .highlight {
-        color: #F5C400; /* set the color to yellow */
-      }
-      
-      /* Add styles for the button */
-      .button-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 0px;
-        margin-right: 20px; /* add some space between the text and the button */
-      }
-    
-      
-      .my-button {
-        display: inline-block;
-        outline: none;
-        cursor: pointer;
-        font-weight: 500;
-        border-radius: 3px;
-        padding: 0 24px; /* increase the padding to make the button bigger */
-        border-radius: 4px;
-        color: #fff;
-        background: #F5C400; /* change the background color to #F5C400 */
-        line-height: 1.15;
-        font-size: 16px; /* increase the font size to match the button size */
-        height: 48px; /* increase the height to match the button size */
-        word-spacing: 0px;
-        letter-spacing: .0892857143em;
-        text-decoration: none;
-        text-transform: uppercase;
-        min-width: 120px; /* increase the min-width to match the button size */
-        border: none;
-        text-align: center;
-        box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-        transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .my-button:hover {
-        background: #FFD600; /* add a hover color */
-        box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
-      }
-      
-    </style>
-  </head>
-  
-  <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">About</a>
-      <a href="#">Server</a>
-    </nav>
-    <div class="container">
-      <div class="text">
-        <h1>Meet <span class="highlight">Reminder</span></h1>
-        <p>Reminder, A bot that can create and manage your reminders with ease. what are you waiting for? add it to your server today!</p>
-      </div>
+<head>
+  <title>weebwashere</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+    /* Add some styles to the navigation bar */
+    nav {
+      background-color: transparent;
+      overflow: hidden;
+      display: flex; /* add display property to flex */
+      justify-content: center; /* align items to center */
+    }
+
+    /* Style the links inside the navigation bar */
+    nav a {
+      color: white;
+      text-align: center;
+      padding: 16px 16px;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.25s ease-in-out;
+    }
+
+    /* Change the color of links on hover */
+    nav a:hover {
+      background-color: transparent;
+      color: white;
+      border-bottom: 2px solid white;
+    }
+
+    nav a:not(:last-child) {
+      margin-right: 20px; /* add margin to space out the links */
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start; /* align items to the top */
+      justify-content: flex-start; /* align items to the left */
+      margin-top: 130px; /* add margin to the top to move the container down */
+    }
+
+    .text {
+      text-align: center; /* align the text to the left */
+      max-width: 600px; /* set the max-width of the text to 500px */
+      margin-top: 15px; /* add margin to the top to space out the text from the navigation bar */
+      margin-right: 20px; /* add margin to space out the text from the image */
+    }
+
+    h1 {
+      text-align: center; /* align the title to the left */
+      color: white;
+      font-size: 36px;
+      margin-top: 0px;
+    }
+
+    .highlight {
+      color: #F5C400; /* set the color to yellow */
+    }
+
+    /* Add styles for the button */
+    .button-container {
+      display: flex;
+      justify-content: center; /* align the button to the left */
+      margin-top: 20px; /* add margin to space out the button from the text */
+    }
+
+    .my-button {
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-weight: 500;
+      border-radius: 3px;
+      padding: 0 24px; /* increase the padding to make the button bigger */
+      border-radius: 4px;
+      color: #fff;
+      background: #F5C400; /* change the background color to #F5C400 */
+      line-height: 1.15;
+      font-size: 16px; /* increase the font size to match the button size */
+      height: 48px; /* increase the height to match the button size */
+      word-spacing: 0px;
+      letter-spacing: .0892857143em;
+      text-decoration: none;
+      text-transform: uppercase;
+      min-width: 120px; /* increase the min-width to match the button size */
+      border: none;
+      text-align: center;
+      box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%),
+        0px 1px 5px 0px rgb(0 0 0 / 12%);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .my-button:hover {
+      background: #FFD600; /* add a hover color */
+      box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
+        0px 1px 10px 0px rgb(0 0 0 / 12%);
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1; /* allow the image to grow and occupy remaining space */
+    }
+
+    .image {
+      width: 100%; /* set the width of the image to 100% */
+      max-width: 600px; /* set the maximum width of the image */
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Server</a>
+  </nav>
+  <div class="container">
+    <div class="text">
+      <h1>Meet <span class="highlight">Reminder</span></h1>
+      <p>Reminder, A bot that can create and manage your reminders with ease. what are you waiting for? add it to your server today!</p>
       <div class="button-container">
         <a href="https://www.guilded.gg/b/2e702266-2dfe-4796-b61c-ccbb0536444c"><button class="my-button">invite</button></a>
       </div>
     </div>
-  </body>
+    <div class="image-container">
+      <img src="path/to/your/image.jpg" alt="Image" class="image">
+    </div>
+  </div>
+</body>
 </html>
